@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSTech", "RSTech\RSTech.csproj", "{384CB848-9A0E-40DB-8396-4F83BCE1E32B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedDatabaseConsoleApp", "SeedDatabaseConsoleApp\SeedDatabaseConsoleApp.csproj", "{18338058-C5F0-46DC-9A66-324DC6FED434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RsTechUnitTests", "RsTechUnitTests\RsTechUnitTests.csproj", "{228D2DC9-9B3A-4844-AD9E-CA71E6D2FB85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{384CB848-9A0E-40DB-8396-4F83BCE1E32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{384CB848-9A0E-40DB-8396-4F83BCE1E32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{384CB848-9A0E-40DB-8396-4F83BCE1E32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18338058-C5F0-46DC-9A66-324DC6FED434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18338058-C5F0-46DC-9A66-324DC6FED434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18338058-C5F0-46DC-9A66-324DC6FED434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18338058-C5F0-46DC-9A66-324DC6FED434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228D2DC9-9B3A-4844-AD9E-CA71E6D2FB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228D2DC9-9B3A-4844-AD9E-CA71E6D2FB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228D2DC9-9B3A-4844-AD9E-CA71E6D2FB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228D2DC9-9B3A-4844-AD9E-CA71E6D2FB85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
