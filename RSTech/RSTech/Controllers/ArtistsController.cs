@@ -2,10 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using RSTech.Models;
 
 namespace RSTech.Controllers
@@ -20,6 +22,23 @@ namespace RSTech.Controllers
         {
             _context = context;
         }
+        
+        // // GET: api/SeedArtists
+        // [HttpGet("/api/SeedArtists")]
+        // public async Task<ActionResult<IEnumerable<Artist>>> SeedArtists()
+        // {
+        //     var json = new WebClient().DownloadString("https://www.teamrockstars.nl/sites/default/files/artists.json");
+        //     var artists = JsonConvert.DeserializeObject<Artist[]>(json);
+        //     if (artists == null)
+        //     {
+        //         return BadRequest("no artists found");
+        //     }
+        //     
+        //     _context.Artists.AddRange(artists);
+        //     await _context.SaveChangesAsync();
+        //     
+        //     return await _context.Artists.ToListAsync();
+        // }
 
         // GET: api/Artists
         [HttpGet]

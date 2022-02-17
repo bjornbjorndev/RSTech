@@ -5,7 +5,17 @@
       "ProjectGuid": "384cb848-9a0e-40db-8396-4f83bce1e32b",
       "DisplayName": "RSTech",
       "ColorIndex": 0
+    },
+    "97d40b4c-955f-4b1a-bf4a-bf3f85b1c696": {
+      "ProjectGuid": "97d40b4c-955f-4b1a-bf4a-bf3f85b1c696",
+      "DisplayName": "RsTechWeb",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
