@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace RSTech.Models
 {
     [Table("Artist")]
-    public class Artist
+    public class Artist : IEntity
     {
-        [Key]
-        public int ArtistId { get; set; }
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Required]
         public int Id { get; set; }
         public string? Name { get; set; }
     }

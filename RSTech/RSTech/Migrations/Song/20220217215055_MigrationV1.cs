@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace RSTech.Migrations
+namespace RSTech.Migrations.Song
 {
     public partial class MigrationV1 : Migration
     {
@@ -12,8 +12,6 @@ namespace RSTech.Migrations
                 name: "Song",
                 columns: table => new
                 {
-                    SongId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     Id = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Year = table.Column<int>(type: "int", nullable: false),
@@ -27,7 +25,7 @@ namespace RSTech.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Song", x => x.SongId);
+                    table.PrimaryKey("PK_Song", x => x.Id);
                 });
         }
 

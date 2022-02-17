@@ -8,7 +8,7 @@ using RSTech.Models;
 
 #nullable disable
 
-namespace RSTech.Migrations
+namespace RSTech.Migrations.Song
 {
     [DbContext(typeof(SongContext))]
     partial class SongContextModelSnapshot : ModelSnapshot
@@ -24,11 +24,8 @@ namespace RSTech.Migrations
 
             modelBuilder.Entity("RSTech.Models.Song", b =>
                 {
-                    b.Property<int>("SongId")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("Id")
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SongId"), 1L, 1);
 
                     b.Property<string>("Album")
                         .HasColumnType("nvarchar(max)");
@@ -45,9 +42,6 @@ namespace RSTech.Migrations
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -60,7 +54,7 @@ namespace RSTech.Migrations
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
-                    b.HasKey("SongId");
+                    b.HasKey("Id");
 
                     b.ToTable("Song");
                 });

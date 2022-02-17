@@ -2,19 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RSTech.Models;
 
 #nullable disable
 
-namespace RSTech.Migrations.Artist
+namespace RSTech.Migrations
 {
     [DbContext(typeof(ArtistContext))]
-    [Migration("20220217211019_MigrationV1")]
-    partial class MigrationV1
+    partial class ArtistContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,19 +23,13 @@ namespace RSTech.Migrations.Artist
 
             modelBuilder.Entity("RSTech.Models.Artist", b =>
                 {
-                    b.Property<int>("ArtistId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ArtistId"), 1L, 1);
-
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ArtistId");
+                    b.HasKey("Id");
 
                     b.ToTable("Artist");
                 });
