@@ -14,6 +14,9 @@ using RSTech.Models;
 
 namespace RSTech.Controllers
 {
+    /// <summary>
+    /// Controller for songs inherits from basecontroller for basic actions
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class SongsController : MyBaseController<Song, EfCoreSongRepository>

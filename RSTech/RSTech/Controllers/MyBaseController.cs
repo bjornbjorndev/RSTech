@@ -6,6 +6,11 @@ using RSTech.Models;
 
 namespace RSTech.Controllers
 {
+    /// <summary>
+    /// Base controller which uses repository for basic actions
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
+    /// <typeparam name="TRepository"></typeparam>
     [Route("api/[controller]")]
     [ApiController]
     public abstract class MyBaseController<TEntity, TRepository> : ControllerBase
